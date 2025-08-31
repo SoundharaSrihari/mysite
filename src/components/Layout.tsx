@@ -34,7 +34,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             <Link to="/" className="flex items-center space-x-2">
               <div className="w-8 h-8 border-2 border-violet-500 rounded-full flex items-center justify-center bg-white">
                 <img
-                  src="image assets/Black_And_White_King_Logo-removebg-preview.png"  // Replace with your image path
+                  src="public/Black_And_White_King_Logo-removebg-preview.png"  // Replace with your image path
                   alt="Logo"
                   className="w-6 h-6 object-cover"
                 />
@@ -123,7 +123,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               <div className="flex items-center space-x-2">
                 <div className="w-8 h-8 border-2 border-violet-500 rounded-full flex items-center justify-center bg-white">
                   <img
-                    src="image assets/Black_And_White_King_Logo-removebg-preview.png"
+                    src="public/Black_And_White_King_Logo-removebg-preview.png"
                     alt="Logo"
                     className="w-6 h-6 object-cover"
                   />
