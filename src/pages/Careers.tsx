@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState, ChangeEvent, FormEvent } from "react";
+import React, { useRef, useState, ChangeEvent, FormEvent } from "react";
 import SpaceBackground from "@/components/SpaceBackground";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -81,7 +81,7 @@ const Careers = () => {
         setOpen(false);
         setFormData({ name: "", email: "", mobile: "", address: "" });
       } else {
-        alert("❌ Submission failed. Try again.");
+        alert("❌ Submission failed. Kindly Contact Us through Email/Phone Below.");
       }
     } catch (error) {
       console.error("Error submitting form:", error);
@@ -139,22 +139,22 @@ const Careers = () => {
 
   const benefits = [
     {
-      icon: <Rocket className="w-6 h-6 text-violet-400" />,
+      icon: <Rocket />,
       title: "Future-Driven Projects",
       description: "Work on ERP, AI/ML, automation, and next-gen business tech",
     },
     {
-      icon: <Zap className="w-6 h-6 text-violet-400" />,
+      icon: <Zap />,
       title: "Impact That Matters",
       description: "Solve real business challenges with smart automation",
     },
     {
-      icon: <Lightbulb className="w-6 h-6 text-violet-400" />,
+      icon: <Lightbulb />,
       title: "Innovative Culture",
       description: "We value curiosity, bold ideas, and out-of-the-box thinking",
     },
     {
-      icon: <Award className="w-6 h-6 text-violet-400" />,
+      icon: <Award />,
       title: "Growth & Learning",
       description: "From live projects to mentorship, we grow together",
     },
@@ -187,18 +187,18 @@ const Careers = () => {
             {benefits.map((benefit, index) => (
               <Card
                 key={index}
-                className="bg-gradient-to-b from-violet-950/20 to-black border-violet-500/30 hover:border-violet-400/50 transition-all duration-500 hover:scale-105 hover:shadow-xl hover:shadow-violet-500/20 group"
+                className="bg-gradient-to-b from-violet-900/40 to-violet-800/70 border-violet-600/50 hover:border-violet-500/70 transition-all duration-500 hover:scale-105 hover:shadow-xl hover:shadow-violet-500/20 group"
               >
                 <CardContent className="p-8 text-center">
                   <div className="mb-6 flex justify-center">
-                    <div className="p-4 rounded-full bg-violet-500/10 group-hover:bg-violet-500/20 transition-colors duration-300">
-                      {benefit.icon}
+                    <div className="p-4 rounded-full bg-violet-700/30 group-hover:bg-violet-700/50 transition-colors duration-300">
+                      {React.cloneElement(benefit.icon, { className: "w-12 h-12 text-violet-700" })}
                     </div>
                   </div>
-                  <h3 className="text-lg font-semibold text-white mb-4 group-hover:text-violet-300 transition-colors duration-300">
+                  <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-violet-300 transition-colors duration-300">
                     {benefit.title}
                   </h3>
-                  <p className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300 text-sm">
+                  <p className="text-black group-hover:text-gray-300 transition-colors duration-300 leading-relaxed">
                     {benefit.description}
                   </p>
                 </CardContent>
@@ -219,7 +219,7 @@ const Careers = () => {
             {jobOpenings.map((job, index) => (
               <Card
                 key={index}
-                className="bg-gradient-to-b from-violet-950/20 to-black border-violet-500/30 hover:border-violet-400/50 transition-all duration-500 hover:shadow-xl hover:shadow-violet-500/20"
+                className="bg-gradient-to-b from-violet-900/40 to-violet-800/70 border-violet-600/50 hover:border-violet-500/70 transition-all duration-500 hover:scale-105 hover:shadow-xl hover:shadow-violet-500/20 group"
               >
                 <CardHeader className="pb-4">
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
@@ -290,8 +290,7 @@ const Careers = () => {
                 </div>
 
                 <div className="text-gray-300">
-                  <p className="mb-4">Send your resume + portfolio to:</p>
-                  <p className="text-violet-400 font-semibold">✨ Subject Line: "Application – [Role] – [Your Name]"</p>
+                  <p className="mb-4">Send your resume + portfolio</p>
                 </div>
 
                 <div className="border-t border-violet-500/20 pt-6">
@@ -317,7 +316,7 @@ const Careers = () => {
 
       {/* Application Form Modal */}
       <Dialog open={open} onOpenChange={setOpen}>
-        <DialogContent className="sm:max-w-lg">
+<DialogContent className="sm:max-w-lg bg-gradient-to-b from-violet-900/40 to-violet-800/70 border border-violet-600/50 rounded-lg shadow-lg">
           <DialogHeader>
             <DialogTitle className="text-2xl">Apply for a Position</DialogTitle>
           </DialogHeader>
@@ -325,26 +324,26 @@ const Careers = () => {
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
               <Label htmlFor="name">Name</Label>
-              <Input id="name" name="name" value={formData.name} onChange={handleChange} required />
+<Input id="name" name="name" value={formData.name} onChange={handleChange} required className="bg-violet-900/40 text-black placeholder-black" />
             </div>
 
             <div>
               <Label htmlFor="email">Email</Label>
-              <Input id="email" type="email" name="email" value={formData.email} onChange={handleChange} required />
+<Input id="email" type="email" name="email" value={formData.email} onChange={handleChange} required className="bg-violet-900/40 text-black placeholder-black" />
             </div>
 
             <div>
               <Label htmlFor="mobile">Mobile No</Label>
-              <Input id="mobile" type="tel" name="mobile" value={formData.mobile} onChange={handleChange} required />
+<Input id="mobile" type="tel" name="mobile" value={formData.mobile} onChange={handleChange} required className="bg-violet-900/40 text-black placeholder-black" />
             </div>
 
             <div>
               <Label htmlFor="address">Address</Label>
-              <Textarea id="address" name="address" value={formData.address} onChange={handleChange} required />
+<Textarea id="address" name="address" value={formData.address} onChange={handleChange} required className="bg-violet-900/40 text-black placeholder-black" />
             </div>
 
-            <DialogFooter>
-              <Button type="submit" className="bg-gradient-to-r from-violet-500 to-purple-600 text-white">
+<DialogFooter className="flex justify-center">
+<Button type="submit" className="bg-gradient-to-r from-violet-500 to-purple-600 text-white mx-auto border border-purple-700 shadow-lg shadow-purple-500/50">
                 Submit Application
               </Button>
             </DialogFooter>

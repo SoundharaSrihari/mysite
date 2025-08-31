@@ -56,8 +56,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                   {item.name}
                 </Link>
               ))}
-              <Button className="bg-gradient-to-r from-violet-500 to-purple-600 hover:from-violet-600 hover:to-purple-700 text-white">
-                Get Started
+              <Button asChild className="bg-gradient-to-r from-violet-500 to-purple-600 hover:from-violet-600 hover:to-purple-700 text-white">
+                <Link to="/services">Get Started</Link>
               </Button>
             </div>
 
@@ -91,8 +91,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 </Link>
               ))}
               <div className="px-3 py-2">
-                <Button className="w-full bg-gradient-to-r from-violet-500 to-purple-600 hover:from-violet-600 hover:to-purple-700 text-white">
-                  Get Started
+                <Button asChild className="w-full bg-gradient-to-r from-violet-500 to-purple-600 hover:from-violet-600 hover:to-purple-700 text-white">
+                  <Link to="/services" onClick={() => setIsMenuOpen(false)}>Get Started</Link>
                 </Button>
               </div>
             </div>
@@ -111,14 +111,19 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {/* Company Info */}
             <div className="col-span-1 md:col-span-2">
-              <div className="flex items-center space-x-2 mb-4">
-                <div className="w-8 h-8 bg-gradient-to-r from-violet-500 to-purple-600 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-sm">V</span>
+              <div className="flex items-center space-x-2">
+                <div className="w-8 h-8 border-2 border-violet-500 rounded-full flex items-center justify-center bg-white">
+                  <img
+                    src="image assets/Black_And_White_King_Logo-removebg-preview.png"
+                    alt="Logo"
+                    className="w-6 h-6 object-cover"
+                  />
                 </div>
                 <span className="text-xl font-bold bg-gradient-to-r from-violet-400 to-white bg-clip-text text-transparent">
                   Vellora Technologies
                 </span>
               </div>
+
               <p className="text-gray-400 mb-4 max-w-md">
                 Excellence, Always. We deliver ERP Extensions & Integrations, AI Automations, and IT Solutions built on innovation, precision, and trust.
               </p>
@@ -154,9 +159,9 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
             {/* Services */}
             <div>
-              <h3 className="text-white font-semibold mb-4">Services</h3>
+              <h3 className="text-white font-semibold mb-4">Products & Services</h3>
               <ul className="space-y-2">
-                <li><span className="text-gray-400">ERP Customization</span></li>
+                <li><span className="text-gray-400">ERP Extensions & Integrations</span></li>
                 <li><span className="text-gray-400">GST Filing Automation</span></li>
                 <li><span className="text-gray-400">CRM Automation</span></li>
                 <li><span className="text-gray-400">AI Solutions</span></li>

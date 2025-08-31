@@ -61,47 +61,47 @@ const Home = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              {
-                icon: <TrendingUp className="w-8 h-8 text-violet-400" />,
-                title: "Tailored ERP Extensions",
-                description: "ERP systems that grow with your business"
-              },
-              {
-                icon: <Zap className="w-8 h-8 text-violet-400" />,
-                title: "AI Automations",
-                description: "Save time & cut errors with intelligent automation"
-              },
-              {
-                icon: <Shield className="w-8 h-8 text-violet-400" />,
-                title: "Secure Solutions",
-                description: "Secure, scalable IT solutions you can trust"
-              },
-              {
-                icon: <CheckCircle className="w-8 h-8 text-violet-400" />,
-                title: "Excellence Driven",
-                description: "Trusted by businesses aiming for excellence"
-              }
-            ].map((item, index) => (
-              <Card 
-                key={index}
-                className="bg-gradient-to-b from-violet-950/20 to-black border-violet-500/30 hover:border-violet-400/50 transition-all duration-500 hover:scale-105 hover:shadow-xl hover:shadow-violet-500/20 group"
-              >
-                <CardContent className="p-8 text-center">
-                  <div className="mb-6 flex justify-center">
-                    <div className="p-4 rounded-full bg-violet-500/10 group-hover:bg-violet-500/20 transition-colors duration-300">
-                      {item.icon}
-                    </div>
-                  </div>
-                  <h3 className="text-xl font-semibold text-white mb-4 group-hover:text-violet-300 transition-colors duration-300">
-                    {item.title}
-                  </h3>
-                  <p className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
-                    {item.description}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
+{[
+{
+  icon: <TrendingUp className="w-8 h-8 text-violet-700" />,
+  title: "Tailored ERP Extensions",
+  description: "ERP systems that grow with your business"
+},
+{
+  icon: <Zap className="w-8 h-8 text-violet-700" />,
+  title: "AI Automations",
+  description: "Save time & cut errors with intelligent automation"
+},
+{
+  icon: <Shield className="w-8 h-8 text-violet-700" />,
+  title: "Secure Solutions",
+  description: "Secure, scalable IT solutions you can trust"
+},
+{
+  icon: <CheckCircle className="w-8 h-8 text-violet-700" />,
+  title: "Excellence Driven",
+  description: "Trusted by businesses aiming for excellence"
+}
+].map((item, index) => (
+  <Card 
+    key={index}
+    className="bg-gradient-to-b from-violet-900/40 to-violet-800/70 border-violet-600/50 hover:border-violet-500/70 transition-all duration-500 hover:scale-105 hover:shadow-xl hover:shadow-violet-500/20 group"
+  >
+    <CardContent className="p-8 text-center">
+      <div className="mb-6 flex justify-center">
+<div className="p-4 rounded-full bg-violet-700/30 group-hover:bg-violet-700/50 transition-colors duration-300">
+  {item.icon}
+</div>
+      </div>
+      <h3 className="text-xl font-semibold text-white mb-4 group-hover:text-violet-300 transition-colors duration-300">
+        {item.title}
+      </h3>
+      <p className="text-black group-hover:text-gray-300 transition-colors duration-300">
+        {item.description}
+      </p>
+    </CardContent>
+  </Card>
+))}
           </div>
         </div>
       </section>

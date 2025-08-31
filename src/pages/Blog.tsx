@@ -15,7 +15,7 @@ const Blog = () => {
       date: "January 15, 2025",
       readTime: "8 min read",
       category: "ERP Solutions",
-      icon: <TrendingUp className="w-6 h-6 text-violet-400" />,
+      icon: <TrendingUp className="w-6 h-6 text-white" />,
       slug: "erp-customization-2025"
     },
     {
@@ -26,7 +26,7 @@ const Blog = () => {
       date: "January 10, 2025", 
       readTime: "6 min read",
       category: "Automation",
-      icon: <FileText className="w-6 h-6 text-violet-400" />,
+      icon: <FileText className="w-6 h-6 text-white" />,
       slug: "gst-filing-automation"
     },
     {
@@ -37,7 +37,7 @@ const Blog = () => {
       date: "January 5, 2025",
       readTime: "7 min read", 
       category: "CRM Solutions",
-      icon: <Users className="w-6 h-6 text-violet-400" />,
+      icon: <Users className="w-6 h-6 text-white" />,
       slug: "crm-automation-power"
     }
   ];
@@ -65,12 +65,12 @@ const Blog = () => {
             {blogPosts.map((post) => (
               <Card 
                 key={post.id}
-                className="bg-gradient-to-b from-violet-950/20 to-black border-violet-500/30 hover:border-violet-400/50 transition-all duration-500 hover:scale-105 hover:shadow-xl hover:shadow-violet-500/20 group"
+                className="bg-gradient-to-b from-violet-900/40 to-violet-800/70 border-violet-600/50 hover:border-violet-500/70 transition-all duration-500 hover:scale-105 hover:shadow-xl hover:shadow-violet-500/20 group"
               >
                 <CardHeader className="pb-4">
                   <div className="flex items-center space-x-2 mb-4">
                     {post.icon}
-                    <span className="text-violet-400 text-sm font-semibold uppercase tracking-wide">
+                    <span className="text-black text-sm font-semibold uppercase tracking-wide">
                       {post.category}
                     </span>
                   </div>
@@ -80,7 +80,7 @@ const Blog = () => {
                 </CardHeader>
                 
                 <CardContent className="pt-0">
-                  <p className="text-gray-400 mb-6 line-clamp-3 group-hover:text-gray-300 transition-colors duration-300">
+                  <p className="text-black mb-6 line-clamp-3 group-hover:text-gray-300 transition-colors duration-300">
                     {post.excerpt}
                   </p>
                   
@@ -101,7 +101,7 @@ const Blog = () => {
                   <Button 
                     asChild
                     variant="ghost" 
-                    className="w-full text-violet-400 hover:text-white hover:bg-violet-500/10 transition-all duration-300 group-hover:bg-violet-500/15"
+                    className="w-full text-black hover:text-white hover:bg-violet-500/10 transition-all duration-300 group-hover:bg-violet-500/15"
                   >
                     <Link to={`/blog/${post.slug}`} className="flex items-center justify-center space-x-2">
                       <span>Read More</span>

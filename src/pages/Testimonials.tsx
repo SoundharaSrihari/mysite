@@ -51,11 +51,11 @@ const Testimonials = () => {
             {testimonials.map((testimonial, index) => (
               <Card 
                 key={index}
-                className="bg-gradient-to-b from-violet-950/20 to-black border-violet-500/30 hover:border-violet-400/50 transition-all duration-500 hover:scale-105 hover:shadow-xl hover:shadow-violet-500/20 group relative overflow-hidden"
+                className="bg-gradient-to-b from-violet-900/40 to-violet-800/70 border-violet-600/50 hover:border-violet-500/70 transition-all duration-500 hover:scale-105 hover:shadow-xl hover:shadow-violet-500/20 group relative overflow-hidden"
               >
                 {/* Floating quote icon */}
                 <div className="absolute top-4 right-4 opacity-20 group-hover:opacity-30 transition-opacity duration-300">
-                  <Quote className="w-12 h-12 text-violet-400" />
+                  <Quote className="w-12 h-12 text-white" />
                 </div>
                 
                 <CardContent className="p-8">
@@ -67,7 +67,7 @@ const Testimonials = () => {
                   </div>
                   
                   {/* Testimonial Content */}
-                  <blockquote className="text-gray-300 text-lg leading-relaxed mb-6 group-hover:text-white transition-colors duration-300">
+                  <blockquote className="text-black text-lg leading-relaxed mb-6 group-hover:text-white transition-colors duration-300">
                     "{testimonial.content}"
                   </blockquote>
                   
@@ -83,7 +83,7 @@ const Testimonials = () => {
                         <h4 className="text-white font-semibold group-hover:text-violet-300 transition-colors duration-300">
                           {testimonial.author}
                         </h4>
-                        <p className="text-gray-400 text-sm">
+                        <p className="text-black text-sm">
                           {testimonial.position} at {testimonial.company}
                         </p>
                       </div>

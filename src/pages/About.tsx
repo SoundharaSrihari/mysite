@@ -63,38 +63,38 @@ const About = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              {
-                icon: <Lightbulb className="w-12 h-12 text-violet-400" />,
-                title: "Innovation",
-                description: "We push the boundaries of what's possible, constantly exploring new technologies and methodologies to deliver cutting-edge solutions that give our clients a competitive edge."
-              },
-              {
-                icon: <Target className="w-12 h-12 text-violet-400" />,
-                title: "Precision",
-                description: "Every line of code, every process, and every solution is crafted with meticulous attention to detail. We believe that precision is the foundation of reliability and excellence."
-              },
-              {
-                icon: <Users className="w-12 h-12 text-violet-400" />,
-                title: "Trust",
-                description: "We build long-lasting relationships with our clients through transparency, integrity, and consistent delivery. Trust is the cornerstone of every successful partnership."
-              }
+{
+  icon: <Lightbulb className="w-12 h-12 text-white" />,
+  title: "Innovation",
+  description: "We push the boundaries of what's possible, constantly exploring new technologies and methodologies to deliver cutting-edge solutions that give our clients a competitive edge."
+},
+{
+  icon: <Target className="w-12 h-12 text-white" />,
+  title: "Precision",
+  description: "Every line of code, every process, and every solution is crafted with meticulous attention to detail. We believe that precision is the foundation of reliability and excellence."
+},
+{
+  icon: <Users className="w-12 h-12 text-white" />,
+  title: "Trust",
+  description: "We build long-lasting relationships with our clients through transparency, integrity, and consistent delivery. Trust is the cornerstone of every successful partnership."
+}
             ].map((pillar, index) => (
               <Card 
                 key={index}
-                className="bg-gradient-to-b from-violet-950/20 to-black border-violet-500/30 hover:border-violet-400/50 transition-all duration-500 hover:scale-105 hover:shadow-xl hover:shadow-violet-500/20 group"
+                className="bg-gradient-to-b from-violet-900/40 to-violet-800/70 border-violet-600/50 hover:border-violet-500/70 transition-all duration-500 hover:scale-105 hover:shadow-xl hover:shadow-violet-500/20 group"
               >
                 <CardContent className="p-8 text-center">
                   <div className="mb-6 flex justify-center">
-                    <div className="p-4 rounded-full bg-violet-500/10 group-hover:bg-violet-500/20 transition-colors duration-300">
-                      {pillar.icon}
-                    </div>
+<div className="p-4 rounded-full bg-violet-700/30 group-hover:bg-violet-700/50 transition-colors duration-300">
+  {React.cloneElement(pillar.icon, { className: "w-12 h-12 text-violet-700" })}
+</div>
                   </div>
                   <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-violet-300 transition-colors duration-300">
                     {pillar.title}
                   </h3>
-                  <p className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300 leading-relaxed">
-                    {pillar.description}
-                  </p>
+<p className="text-black group-hover:text-gray-300 transition-colors duration-300 leading-relaxed">
+  {pillar.description}
+</p>
                 </CardContent>
               </Card>
             ))}
@@ -106,11 +106,11 @@ const About = () => {
       <section className="py-20 bg-gradient-to-b from-violet-950/10 to-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="max-w-4xl mx-auto">
-            <div className="flex justify-center mb-8">
-              <div className="p-6 rounded-full bg-gradient-to-r from-violet-500/20 to-purple-600/20 border-2 border-violet-400/30">
-                <Award className="w-16 h-16 text-violet-400" />
-              </div>
-            </div>
+<div className="flex justify-center mb-8">
+  <div className="p-6 rounded-full bg-gradient-to-r from-violet-700/30 to-purple-700/30 border-2 border-violet-700/50">
+    <Award className="w-16 h-16 text-violet-700" />
+  </div>
+</div>
             <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-violet-400 to-white bg-clip-text text-transparent mb-8">
               Excellence, Always
             </h2>

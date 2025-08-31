@@ -87,9 +87,8 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="text-white font-semibold">Phone</h3>
-                      <a href="tel:+919597343176" className="text-violet-400 hover:text-violet-300 transition-colors">
-                        +91 9597343176
-                      </a>
+<p className="text-white">+91 9597343176</p>
+
                     </div>
                   </div>
                   
@@ -99,9 +98,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="text-white font-semibold">Email</h3>
-                      <a href="mailto:contact@velloratechnologies.com" className="text-violet-400 hover:text-violet-300 transition-colors">
-                        contact@velloratechnologies.com
-                      </a>
+<p className="text-white">contact@velloratechnologies.com</p>
                     </div>
                   </div>
                   
@@ -111,7 +108,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="text-white font-semibold">Location</h3>
-                      <p className="text-violet-400">Coimbatore, Tamil Nadu</p>
+<p className="text-white">Coimbatore, Tamil Nadu</p>
                     </div>
                   </div>
                 </div>
@@ -127,10 +124,10 @@ const Contact = () => {
                     { icon: <Award className="w-5 h-5" />, text: "Excellence, always guaranteed" }
                   ].map((item, index) => (
                     <div key={index} className="flex items-center space-x-3 text-gray-300">
-                      <div className="text-violet-400">
-                        {item.icon}
-                      </div>
-                      <span>{item.text}</span>
+<div className="text-white">
+  {item.icon}
+</div>
+<span className="text-white">{item.text}</span>
                     </div>
                   ))}
                 </div>
@@ -138,15 +135,15 @@ const Contact = () => {
             </div>
 
             {/* Contact Form */}
-            <Card className="bg-gradient-to-b from-violet-950/20 to-black border-violet-500/30">
+            <Card className="bg-gradient-to-b from-violet-900/40 to-violet-800/70 border-violet-600/50">
               <CardHeader>
                 <CardTitle className="text-2xl font-bold text-white">📬 Drop Us a Message</CardTitle>
-                <p className="text-gray-400">We usually respond within 24 hours. Share your details and our team will connect with you.</p>
+                <p className="text-black-400">We usually respond within 24 hours. Share your details and our team will connect with you.</p>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
-                    <label htmlFor="fullName" className="block text-sm font-medium text-gray-300 mb-2">
+<label htmlFor="fullName" className="block text-sm font-medium text-white mb-2">
                       Full Name ✨
                     </label>
                     <Input
@@ -156,13 +153,13 @@ const Contact = () => {
                       required
                       value={formData.fullName}
                       onChange={handleInputChange}
-                      className="bg-violet-950/20 border-violet-500/30 text-white placeholder-gray-400 focus:border-violet-400"
+                      className="bg-violet-950/20 border-violet-500/30 text-black placeholder-black focus:border-violet-400"
                       placeholder="Enter your full name"
                     />
                   </div>
                   
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
+<label htmlFor="email" className="block text-sm font-medium text-white mb-2">
                       Email Address 📧
                     </label>
                     <Input
@@ -172,13 +169,13 @@ const Contact = () => {
                       required
                       value={formData.email}
                       onChange={handleInputChange}
-                      className="bg-violet-950/20 border-violet-500/30 text-white placeholder-gray-400 focus:border-violet-400"
+                      className="bg-violet-950/20 border-violet-500/30 text-black placeholder-black focus:border-violet-400"
                       placeholder="Enter your email address"
                     />
                   </div>
                   
                   <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-gray-300 mb-2">
+<label htmlFor="phone" className="block text-sm font-medium text-white mb-2">
                       Phone Number 📱
                     </label>
                     <Input
@@ -188,13 +185,13 @@ const Contact = () => {
                       required
                       value={formData.phone}
                       onChange={handleInputChange}
-                      className="bg-violet-950/20 border-violet-500/30 text-white placeholder-gray-400 focus:border-violet-400"
+                      className="bg-violet-950/20 border-violet-500/30 text-black placeholder-black focus:border-violet-400"
                       placeholder="Enter your phone number"
                     />
                   </div>
                   
                   <div>
-                    <label htmlFor="company" className="block text-sm font-medium text-gray-300 mb-2">
+<label htmlFor="company" className="block text-sm font-medium text-white mb-2">
                       Company Name 🏢 (optional)
                     </label>
                     <Input
@@ -203,13 +200,13 @@ const Contact = () => {
                       type="text"
                       value={formData.company}
                       onChange={handleInputChange}
-                      className="bg-violet-950/20 border-violet-500/30 text-white placeholder-gray-400 focus:border-violet-400"
+                      className="bg-violet-950/20 border-violet-500/30 text-black placeholder-black focus:border-violet-400"
                       placeholder="Enter your company name"
                     />
                   </div>
                   
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
+<label htmlFor="message" className="block text-sm font-medium text-white mb-2">
                       Message 💬
                     </label>
                     <Textarea
@@ -219,7 +216,7 @@ const Contact = () => {
                       rows={5}
                       value={formData.message}
                       onChange={handleInputChange}
-                      className="bg-violet-950/20 border-violet-500/30 text-white placeholder-gray-400 focus:border-violet-400 resize-none"
+                      className="bg-violet-950/20 border-violet-500/30 text-black placeholder-black focus:border-violet-400 resize-none"
                       placeholder="Tell us about your project or ask any questions..."
                     />
                   </div>
