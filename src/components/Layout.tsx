@@ -30,7 +30,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             <Link to="/" className="flex items-center space-x-2">
               <div className="w-8 h-8 border-2 border-violet-500 rounded-full flex items-center justify-center bg-white">
                 <img
-                  src="image assets/Black_And_White_King_Logo-removebg-preview.png"  // Replace with your image path
+                  src="https://github.com/SoundharaSrihari/mysite/blob/4b1d379dcf998be4f6334b0b0b6209c313aafbce/image%20assets/Black_And_White_King_Logo-removebg-preview.png"  // Replace with your image path
                   alt="Logo"
                   className="w-6 h-6 object-cover"
                 />
