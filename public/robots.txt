@@ -1,2 +1,5 @@
-User-agent: *
-Allow: /
+git add .
+git commit -m "Verified image assets paths"
+git push origin main
+git pull origin main --rebase
+git push origin main
