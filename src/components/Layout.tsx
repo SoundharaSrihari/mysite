@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Menu, X, Phone, Mail, MapPin } from 'lucide-react';
 
-import logo from '../image assets/Black_And_White_King_Logo-removebg-preview.png'; // Correct this relative path as per your folder structure
+import logo from '../image-assets/Black_And_White_King_Logo-removebg-preview.png';
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
