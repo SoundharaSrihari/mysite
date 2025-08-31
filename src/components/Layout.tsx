@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Menu, X, Phone, Mail, MapPin } from 'lucide-react';
 
-import logo from '../image-assets/Black_And_White_King_Logo-removebg-preview.png';
+import logo from 'image-assets/Black_And_White_King_Logo-removebg-preview.png';
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,8 +31,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             <Link to="/" className="flex items-center space-x-2">
               <div className="w-8 h-8 border-2 border-violet-500 rounded-full flex items-center justify-center bg-white">
                 <img
-                  src={logo}
-                  alt="Logo"
+                  src={logo} alt="Logo"
                   className="w-6 h-6 object-cover"
                 />
               </div>
@@ -47,11 +46,10 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 <Link
                   key={item.name}
                   to={item.href}
-                  className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                    isActive(item.href)
+                  className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${isActive(item.href)
                       ? 'text-violet-400 bg-violet-500/10'
                       : 'text-gray-300 hover:text-violet-400 hover:bg-violet-500/10'
-                  }`}
+                    }`}
                 >
                   {item.name}
                 </Link>
@@ -82,11 +80,10 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                   key={item.name}
                   to={item.href}
                   onClick={() => setIsMenuOpen(false)}
-                  className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
-                    isActive(item.href)
+                  className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${isActive(item.href)
                       ? 'text-violet-400 bg-violet-500/10'
                       : 'text-gray-300 hover:text-violet-400 hover:bg-violet-500/10'
-                  }`}
+                    }`}
                 >
                   {item.name}
                 </Link>
@@ -115,8 +112,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               <div className="flex items-center space-x-2">
                 <div className="w-8 h-8 border-2 border-violet-500 rounded-full flex items-center justify-center bg-white">
                   <img
-                    src={logo}
-                    alt="Logo"
+                  src={logo} alt="Logo"
                     className="w-6 h-6 object-cover"
                   />
                 </div>
