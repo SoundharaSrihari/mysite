@@ -6,23 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Mail, MapPin, Clock, Rocket, Award, Lightbulb, Zap } from "lucide-react";
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogFooter,
-} from "@/components/ui/dialog";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
 
-type ApplicantForm = {
-  name: string;
-  email: string;
-  mobile: string;
-  address: string;
-};
 
 type Job = {
   title: string;
@@ -39,16 +23,7 @@ const Careers = () => {
   const applySectionRef = useRef<HTMLDivElement | null>(null);
   const applyButtonRef = useRef<HTMLButtonElement | null>(null);
 
-  // Modal state
-  const [open, setOpen] = useState(false);
 
-  // Form state
-  const [formData, setFormData] = useState<ApplicantForm>({
-    name: "",
-    email: "",
-    mobile: "",
-    address: "",
-  });
 
   // Scroll and focus when clicking card-level Apply
   const scrollToApply = () => {
@@ -56,38 +31,7 @@ const Careers = () => {
     setTimeout(() => applyButtonRef.current?.focus(), 400);
   };
 
-  // Change handler
-  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
 
-  // Submit to Formspree
-  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-
-    try {
-      const response = await fetch("https://formspree.io/f/meolqyop", {
-        method: "POST",
-        body: JSON.stringify(formData),
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-      });
-
-      if (response.ok) {
-        alert("✅ Application submitted successfully!");
-        setOpen(false);
-        setFormData({ name: "", email: "", mobile: "", address: "" });
-      } else {
-        alert("❌ Submission failed. Kindly Contact Us through Email/Phone Below.");
-      }
-    } catch (error) {
-      console.error("Error submitting form:", error);
-      alert("⚠️ Something went wrong. Please try again.");
-    }
-  };
 
   const jobOpenings: Job[] = [
     {
@@ -304,7 +248,7 @@ const Careers = () => {
             <Button
               ref={applyButtonRef}
               size="lg"
-              onClick={() => setOpen(true)}
+              onClick={() => window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLScXDbNo9S-yE0fatYyKCfXojibu1qhmRTjB-4D-KyQwJcvzow/viewform?usp=dialog'}
               className="bg-gradient-to-r from-violet-500 to-purple-600 hover:from-violet-600 hover:to-purple-700 text-white px-12 py-6 text-lg font-semibold rounded-full transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-violet-500/30"
             >
               <Mail className="w-5 h-5" />
@@ -315,41 +259,6 @@ const Careers = () => {
       </section>
 
       {/* Application Form Modal */}
-      <Dialog open={open} onOpenChange={setOpen}>
-<DialogContent className="sm:max-w-lg bg-gradient-to-b from-violet-900/40 to-violet-800/70 border border-violet-600/50 rounded-lg shadow-lg">
-          <DialogHeader>
-            <DialogTitle className="text-2xl">Apply for a Position</DialogTitle>
-          </DialogHeader>
-
-          <form onSubmit={handleSubmit} className="space-y-4">
-            <div>
-              <Label htmlFor="name">Name</Label>
-<Input id="name" name="name" value={formData.name} onChange={handleChange} required className="bg-violet-900/40 text-black placeholder-black" />
-            </div>
-
-            <div>
-              <Label htmlFor="email">Email</Label>
-<Input id="email" type="email" name="email" value={formData.email} onChange={handleChange} required className="bg-violet-900/40 text-black placeholder-black" />
-            </div>
-
-            <div>
-              <Label htmlFor="mobile">Mobile No</Label>
-<Input id="mobile" type="tel" name="mobile" value={formData.mobile} onChange={handleChange} required className="bg-violet-900/40 text-black placeholder-black" />
-            </div>
-
-            <div>
-              <Label htmlFor="address">Address</Label>
-<Textarea id="address" name="address" value={formData.address} onChange={handleChange} required className="bg-violet-900/40 text-black placeholder-black" />
-            </div>
-
-<DialogFooter className="flex justify-center">
-<Button type="submit" className="bg-gradient-to-r from-violet-500 to-purple-600 text-white mx-auto border border-purple-700 shadow-lg shadow-purple-500/50">
-                Submit Application
-              </Button>
-            </DialogFooter>
-          </form>
-        </DialogContent>
-      </Dialog>
     </div>
   );
 };
