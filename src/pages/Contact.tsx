@@ -144,7 +144,7 @@ const Contact = () => {
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
 <label htmlFor="fullName" className="block text-sm font-medium text-white mb-2">
-                      Full Name ✨
+                      Full Name
                     </label>
                     <Input
                       id="fullName"
@@ -160,7 +160,7 @@ const Contact = () => {
                   
                   <div>
 <label htmlFor="email" className="block text-sm font-medium text-white mb-2">
-                      Email Address 📧
+                      Email Address
                     </label>
                     <Input
                       id="email"
@@ -176,7 +176,7 @@ const Contact = () => {
                   
                   <div>
 <label htmlFor="phone" className="block text-sm font-medium text-white mb-2">
-                      Phone Number 📱
+                      Phone Number
                     </label>
                     <Input
                       id="phone"
@@ -192,7 +192,7 @@ const Contact = () => {
                   
                   <div>
 <label htmlFor="company" className="block text-sm font-medium text-white mb-2">
-                      Company Name 🏢 (optional)
+                      Company Name (optional)
                     </label>
                     <Input
                       id="company"
@@ -207,7 +207,7 @@ const Contact = () => {
                   
                   <div>
 <label htmlFor="message" className="block text-sm font-medium text-white mb-2">
-                      Message 💬
+                      Message
                     </label>
                     <Textarea
                       id="message"
@@ -226,7 +226,7 @@ const Contact = () => {
                     className="w-full bg-gradient-to-r from-violet-500 to-purple-600 hover:from-violet-600 hover:to-purple-700 text-white py-6 text-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-violet-500/30"
                   >
                     <Send className="w-5 h-5 mr-2" />
-                    Send Message 🚀
+                    Send Message
                   </Button>
 
                   {/* Status message */}
