@@ -11,7 +11,7 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-violet-400 to-white bg-clip-text text-transparent mb-6">
-              About Vellora Technologies
+              About Stayble
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               Our journey began with a simple yet powerful realization — transforming inefficiency into precision, and monotony into opportunity.
@@ -26,7 +26,7 @@ const About = () => {
           <div className="max-w-4xl mx-auto">
             <div className="prose prose-lg text-gray-300 prose-invert">
               <p className="text-xl leading-relaxed mb-6">
-                At Vellora Technologies, our journey began with a simple yet powerful realization. During one of our many late-night discussions, my co-founder and I found ourselves reflecting on the monotony of routine tasks we were performing daily. These were not only repetitive but also mentally draining, stripping away the time and creativity we could have invested in building something meaningful.
+                At Stayble, our journey began with a simple yet powerful realization. During one of our many late-night discussions, my co-founder and I found ourselves reflecting on the monotony of routine tasks we were performing daily. These were not only repetitive but also mentally draining, stripping away the time and creativity we could have invested in building something meaningful.
               </p>
               
               <p className="text-xl leading-relaxed mb-6">

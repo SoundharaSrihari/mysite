@@ -17,7 +17,7 @@ const Home = () => {
             </h1>
 
             <p className="text-xl md:text-2xl text-gray-300 leading-relaxed animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-300">
-              At Vellora Technologies, we deliver ERP Extensions & Integrations, AI Automations, and IT Solutions built on innovation, precision, and trust.
+              At Stayble, we deliver ERP Extensions & Integrations, AI Automations, and IT Solutions built on innovation, precision, and trust.
               <br />
               <span className="text-violet-400">Our goal is simple — empower your business to work smarter, scale faster, and achieve excellence, always.</span>
             </p>

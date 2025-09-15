@@ -41,7 +41,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
               </div>
               <span className="text-xl font-bold bg-gradient-to-r from-violet-400 to-white bg-clip-text text-transparent">
-                Vellora Technologies
+                Stayble Solutions
               </span>
             </Link>
 
@@ -130,8 +130,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                   />
 
                 </div>
-                <span className="text-xl font-bold bg-gradient-to-r from-violet-400 to-white bg-clip-text text-transparent">
-                  Vellora Technologies
+              <span className="text-xl font-bold bg-gradient-to-r from-violet-400 to-white bg-clip-text text-transparent">
+                  Stayble Solutions
                 </span>
               </div>
 
@@ -185,8 +185,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
 
           <div className="border-t border-violet-500/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm">
-              © 2025 Vellora Technologies. All rights reserved.
+              <p className="text-gray-400 text-sm">
+              © 2025 Stayble Solutions. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link to="/privacy" className="text-gray-400 hover:text-violet-400 text-sm transition-colors">

@@ -11,7 +11,7 @@ const Services = () => {
   icon: <Settings className="w-12 h-12 text-white" />,
   title: "ERP Add-ons",
   subtitle: "Transform the way your business operates.",
-  description: "At Vellora Technologies, we don't just implement ERP systems — we tailor them to your workflows. From building custom modules and dashboards to automating approvals and integrating third-party applications, we ensure your ERP works exactly the way you need it.",
+  description: "At Stayble, we don't just implement ERP systems — we tailor them to your workflows. From building custom modules and dashboards to automating approvals and integrating third-party applications, we ensure your ERP works exactly the way you need it.",
   highlights: [
     "Custom module & report development",
     "Workflow & process automation", 

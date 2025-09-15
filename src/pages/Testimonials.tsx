@@ -38,7 +38,7 @@ const Testimonials = () => {
               Trusted by Businesses, Powered by Excellence
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              At Vellora Technologies, we measure our success by the value we create for our clients. Here's what professionals say about us:
+              At Stayble, we measure our success by the value we create for our clients. Here's what professionals say about us:
             </p>
           </div>
         </div>
