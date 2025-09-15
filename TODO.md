@@ -1,3 +1,8 @@
-- [x] Remove the Dialog component and all related code (modal state, form state, handlers) from src/pages/Careers.tsx
-- [x] Change the "Apply Now" button's onClick to redirect to the Google Forms URL
-- [ ] Test the redirection to ensure it works correctly
+# TODO for Careers Page Apply Dialog
+
+- [x] Add imports for Dialog, Input, Label components
+- [x] Add useState for dialog open state
+- [x] Add handleSubmit function for form submission
+- [x] Change "Apply Now" button onClick to open dialog
+- [x] Add Dialog JSX with form fields (Full Name, Email, Phone, Resume)
+- [x] Test the dialog and form submission

@@ -17,5 +17,13 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  
+  server: {
+    proxy: {
+      '/submit': {
+        target: 'https://docs.google.com',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/submit/, '/forms/d/e/1FAIpQLScXDbNo9S-yE0fatYyKCfXojibu1qhmRTjB-4D-KyQwJcvzow/formResponse'),
+      },
+    },
+  },
 }));
