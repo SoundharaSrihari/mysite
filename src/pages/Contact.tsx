@@ -66,7 +66,7 @@ const Contact = () => {
               Let's Build the Future of Your Business Together 🚀
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              We believe great partnerships start with a conversation. Whether you're curious about ERP Extensions, AI automation, GST filing solutions, or just exploring possibilities — we're here to help.
+              We believe great partnerships start with a conversation. Whether you're curious about CRM Applications, AI automation, GST filing solutions, or just exploring possibilities — we're here to help.
             </p>
           </div>
         </div>
@@ -98,7 +98,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="text-white font-semibold">Email</h3>
-<p className="text-white">contact@velloratechnologies.com</p>
+<p className="text-white">info@stayblesolution.com</p>
                     </div>
                   </div>
                   

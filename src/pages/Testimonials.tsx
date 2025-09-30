@@ -6,7 +6,7 @@ import SpaceBackground from '@/components/SpaceBackground';
 const Testimonials = () => {
   const testimonials = [
     {
-      content: "Vellora transformed our ERP system completely. Manual data entry is now history, and our workflows run seamlessly. Their team's expertise and responsiveness exceeded expectations.",
+      content: "Stayble transformed our ERP system completely. Manual data entry is now history, and our workflows run seamlessly. Their team's expertise and responsiveness exceeded expectations.",
       author: "Rajesh Kumar",
       position: "Operations Director",
       company: "TechFlow Industries",

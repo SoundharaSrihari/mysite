@@ -9,9 +9,9 @@ const Services = () => {
   const services = [
 {
   icon: <Settings className="w-12 h-12 text-white" />,
-  title: "ERP Add-ons",
+  title: "CRM Solutions",
   subtitle: "Transform the way your business operates.",
-  description: "At Stayble, we don't just implement ERP systems — we tailor them to your workflows. From building custom modules and dashboards to automating approvals and integrating third-party applications, we ensure your ERP works exactly the way you need it.",
+  description: "At Stayble, we don't just implement CRM systems — we tailor them to your workflows. From building custom modules and dashboards to automating approvals and integrating third-party applications, we ensure your ERP works exactly the way you need it.",
   highlights: [
     "Custom module & report development",
     "Workflow & process automation", 
@@ -121,7 +121,7 @@ const Services = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              🌟 Why Choose Vellora?
+              Why Choose Stayble?
             </h2>
           </div>
           

@@ -17,10 +17,10 @@ const Home = () => {
             </h1>
 
             <p className="text-xl md:text-2xl text-gray-300 leading-relaxed animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-300">
-              At Stayble, we deliver ERP Extensions & Integrations, AI Automations, and IT Solutions built on innovation, precision, and trust.
+              At Stayble, we deliver CRM Solutions, AI Automations, and IT Solutions built on innovation, precision, and trust.
               <br />
               <span className="text-violet-400">Our goal is simple — empower your business to work smarter, scale faster, and achieve excellence, always.</span>
-            </p>
+            </p>1
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-500">
               <Button
@@ -57,7 +57,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-violet-400 to-white bg-clip-text text-transparent mb-6">
-              Why Choose Vellora?
+              Why Choose Stayble?
             </h2>
           </div>
 
@@ -65,8 +65,8 @@ const Home = () => {
             {[
               {
                 icon: <TrendingUp className="w-8 h-8 text-violet-700" />,
-                title: "Tailored ERP Extensions",
-                description: "ERP systems that grow with your business"
+                title: "Tailored CRM",
+                description: "CRM for wide range of business systems that grow with your business"
               },
               {
                 icon: <Zap className="w-8 h-8 text-violet-700" />,

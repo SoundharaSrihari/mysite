@@ -141,7 +141,7 @@ const Careers = () => {
     {
       icon: <Rocket />,
       title: "Future-Driven Projects",
-      description: "Work on ERP, AI/ML, automation, and next-gen business tech",
+      description: "Work on Frappe, AI/ML, automation, and next-gen business tech",
     },
     {
       icon: <Zap />,
@@ -170,7 +170,7 @@ const Careers = () => {
               Join Us on a Mission to Automate the Universe 🚀
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              We're on a journey to transform businesses with ERP Extensions & Integrations, AI-driven automation, and intelligent solutions. If you want to work on cutting-edge projects that make real impact, this is the place where innovation meets opportunity.
+              We're on a journey to transform businesses with CRM Solutions, AI-driven automation, and intelligent solutions. If you want to work on cutting-edge projects that make real impact, this is the place where innovation meets opportunity.
             </p>
           </div>
         </div>
@@ -286,7 +286,7 @@ const Careers = () => {
               <div className="space-y-6">
                 <div className="flex items-center justify-center space-x-2 text-violet-400 mb-4">
                   <Mail className="w-6 h-6" />
-                  <span className="text-xl font-semibold">careers@velloratechnologies.com</span>
+                  <span className="text-xl font-semibold">careers@stayblesolution.com</span>
                 </div>
 
                 <div className="text-gray-300">
@@ -316,7 +316,7 @@ const Careers = () => {
 
       {/* Application Form Modal */}
       <Dialog open={open} onOpenChange={setOpen}>
-<DialogContent className="sm:max-w-lg bg-gradient-to-b from-violet-900/40 to-violet-800/70 border border-violet-600/50 rounded-lg shadow-lg">
+        <DialogContent className="sm:max-w-lg bg-gradient-to-b from-violet-900/40 to-violet-800/70 border border-violet-600/50 rounded-lg shadow-lg">
           <DialogHeader>
             <DialogTitle className="text-2xl">Apply for a Position</DialogTitle>
           </DialogHeader>
@@ -324,26 +324,26 @@ const Careers = () => {
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
               <Label htmlFor="name">Name</Label>
-<Input id="name" name="name" value={formData.name} onChange={handleChange} required className="bg-violet-900/40 text-black placeholder-black" />
+              <Input id="name" name="name" value={formData.name} onChange={handleChange} required className="bg-violet-900/40 text-black placeholder-black" />
             </div>
 
             <div>
               <Label htmlFor="email">Email</Label>
-<Input id="email" type="email" name="email" value={formData.email} onChange={handleChange} required className="bg-violet-900/40 text-black placeholder-black" />
+              <Input id="email" type="email" name="email" value={formData.email} onChange={handleChange} required className="bg-violet-900/40 text-black placeholder-black" />
             </div>
 
             <div>
               <Label htmlFor="mobile">Mobile No</Label>
-<Input id="mobile" type="tel" name="mobile" value={formData.mobile} onChange={handleChange} required className="bg-violet-900/40 text-black placeholder-black" />
+              <Input id="mobile" type="tel" name="mobile" value={formData.mobile} onChange={handleChange} required className="bg-violet-900/40 text-black placeholder-black" />
             </div>
 
             <div>
               <Label htmlFor="address">Address</Label>
-<Textarea id="address" name="address" value={formData.address} onChange={handleChange} required className="bg-violet-900/40 text-black placeholder-black" />
+              <Textarea id="address" name="address" value={formData.address} onChange={handleChange} required className="bg-violet-900/40 text-black placeholder-black" />
             </div>
 
-<DialogFooter className="flex justify-center">
-<Button type="submit" className="bg-gradient-to-r from-violet-500 to-purple-600 text-white mx-auto border border-purple-700 shadow-lg shadow-purple-500/50">
+            <DialogFooter className="flex justify-center">
+              <Button type="submit" className="bg-gradient-to-r from-violet-500 to-purple-600 text-white mx-auto border border-purple-700 shadow-lg shadow-purple-500/50">
                 Submit Application
               </Button>
             </DialogFooter>

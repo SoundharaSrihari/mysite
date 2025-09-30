@@ -130,15 +130,14 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                   />
 
                 </div>
-              <span className="text-xl font-bold bg-gradient-to-r from-violet-400 to-white bg-clip-text text-transparent">
+                <span className="text-xl font-bold bg-gradient-to-r from-violet-400 to-white bg-clip-text text-transparent">
                   Stayble Solutions
                 </span>
               </div>
 
 
               <p className="text-gray-400 mb-4 max-w-md">
-                Excellence, Always. We deliver ERP Extensions & Integrations, AI Automations, and IT Solutions built on innovation, precision, and trust.
-              </p>
+                Excellence, Always. We deliver CRM Solutions, AI Automations, and IT Solutions built on innovation, precision, and trust.              </p>
               <div className="space-y-2">
                 <div className="flex items-center space-x-2 text-gray-400">
                   <Phone size={16} />
@@ -146,7 +145,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 </div>
                 <div className="flex items-center space-x-2 text-gray-400">
                   <Mail size={16} />
-                  <span>contact@velloratechnologies.com</span>
+                  <span>contact@stayblesolution.com</span>
                 </div>
                 <div className="flex items-center space-x-2 text-gray-400">
                   <MapPin size={16} />
@@ -175,7 +174,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             <div>
               <h3 className="text-white font-semibold mb-4">Products & Services</h3>
               <ul className="space-y-2">
-                <li><span className="text-gray-400">ERP Extensions & Integrations</span></li>
+                <li><span className="text-gray-400">CRM Applications & Solutions</span></li>
                 <li><span className="text-gray-400">GST Filing Automation</span></li>
                 <li><span className="text-gray-400">CRM Automation</span></li>
                 <li><span className="text-gray-400">AI Solutions</span></li>
@@ -185,7 +184,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
 
           <div className="border-t border-violet-500/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-              <p className="text-gray-400 text-sm">
+            <p className="text-gray-400 text-sm">
               © 2025 Stayble Solutions. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
